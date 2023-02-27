@@ -12,7 +12,7 @@ namespace Blog.Context
         public DbSet<PostWithTagsCount> PostWithTagsCount { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=FluentBlog;User ID=sa;Password=1q2w3e4r@#$;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
